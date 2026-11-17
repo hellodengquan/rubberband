@@ -105,6 +105,7 @@ unit_test_sources = [
   'src/test/TestStretchCalculator.cpp',
   'src/test/TestStretcher.cpp',
   'src/test/TestBinClassifier.cpp',
+  'src/test/TestDelayAndResampling.cpp',
   'src/test/test.cpp',
 ]
 
@@ -857,6 +858,8 @@ if have_boost_unit_test
        unit_tests, args: [ '--run_test=TestStretchCalculator', general_test_args ])
   test('Stretcher',
        unit_tests, args: [ '--run_test=TestStretcher', general_test_args ])
+  test('DelayAndResampling',
+       unit_tests, args: [ '--run_test=TestDelayAndResampling', general_test_args ])
 else
   target_summary += { 'Unit tests': false }
   message('Not building unit tests: boost_unit_test_framework dependency not found')
