@@ -104,6 +104,7 @@ unit_test_sources = [
   'src/test/TestSignalBits.cpp',
   'src/test/TestStretchCalculator.cpp',
   'src/test/TestStretcher.cpp',
+  'src/test/TestStretcherRealTime.cpp',
   'src/test/TestBinClassifier.cpp',
   'src/test/test.cpp',
 ]
